@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>WebRTC</title>
+  </head>
+  <body>
+    <button   id="fun">Negotiate</button>
+    <h1><span id="speed"></span>WebRTC   <span id="datareach"></span></h1>
+    <div class="main">
+      <div class="container1">
+        <div class="user">
+          <video autoplay id="uservid"></video>
+        </div>
+        <div class="caller">
+          <video autoplay id="callervid"></video>
+        </div>
+      </div>
+    </div>
+    <div class="m2">
+      <canvas id="canvas"></canvas>
+    </div>
+    <div class="fileinput">
+      <input type="file" id="files" multiple />
+    </div>
+    <select name="cameradevices" id="camera">
+
+    </select>
+    
+    <select name="" id="audioin"></select>
+    <select name="" id="audioout"></select>
+    <script src="./js/canvas.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./js/socket.js"></script>
+    <script src="./js/globals.js"></script>
+    <script src="./js/connect.js"></script>
+    <script src="./js/starter.js"></script>
+    <script src="./js/settings.js"></script>
+  </body>
+</html>

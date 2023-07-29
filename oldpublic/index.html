@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebRTC</title>
+</head>
+<body>
+    <center><H1>WebRTC</H1></center>
+    <center><h1><button onclick="startit()"><h1>Start video Call</h1></button></h1></center>
+    <center><h1><button onclick="renegotiate()"><h1>Renegotiate</h1></button></h1></center>
+    <div class="localinfo">'
+        <p id="roomno">
+
+        </p>
+        <p id="usersname"></p>
+    </div>
+    <div id="offer"></div>
+    <div id="answer"></div>
+    <style>canvas {
+        border: 1px solid #000;
+      }</style>
+    <canvas id="canvas"></canvas>
+    <video  autoplay ></video>
+    <video class="video2" autoplay></video>
+    <!-- <script src="/webrtc_scripts/start.js"></script> -->
+    
+    
+      <form action="" id="send-container">
+        <input type="text" id="roomid" placeholder="roomid"/>
+        <input type="text" id="username" placeholder="username"/>
+        <input type="submit" value="submit" id="submit"/>
+      </form>
+    <button id="startaudio">start audio</button>
+    <button id="stopaudio">stop audio</button>
+    <button id="stopvideo" >stop video</button>
+    <button id="startvideo" >start video</button>
+    <select name="" id="audiooptions"></select>
+    <select name="" id="videooptions"></select>
+    <select name="" id="audiooutputoptions"></select>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/webrtc_scripts/socket.js">
+      
+    </script>
+
+
+
+    <script src="webrtc_scripts/canvas.js" ></script>
+    <script src="webrtc_scripts/signaling.js"></script>
+    <script src="webrtc_scripts/webrtc_basics.js"></script>
+    <script src="webrtc_scripts/main.js" ></script>
+    <script src="webrtc_scripts/webrtc_createconn.js
+    "></script>
+</body>
+</html>
